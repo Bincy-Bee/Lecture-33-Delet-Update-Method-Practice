@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-SERVER-DB UI in Table</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+        }
+        table, tr, th, tbody, td{
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 5px 20px;
+        }
+        th{
+            background-color: rgba(128, 255, 0, 0.445);
+            font-size: 18px;
+        }
+        tbody{
+            background-color: rgba(34, 139, 34, 0.185);
+            font-weight: 400;
+        }
+        #ubtn{
+            background-color: rgba(6, 103, 248, 0.308);
+            border: none;
+            padding: 5px 8px;
+            border-radius: 5px;
+        }
+        #dbtn{
+            background-color: rgba(248, 6, 6, 0.308);
+            border: none;
+            padding: 5px 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="number" id="num" placeholder="Enter Number">
+        <input type="text" id="gender" placeholder="Enter Gender">
+        <input type="submit" value="Submit" id="print">
+    </form>
+    <hr>
+    <div>
+        <button id="men">Men</button>
+        <button>Women</button>
+        <button>Kids</button>
+    </div>
+    <hr>
+    <table>
+         <tr>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Gender
+                <select name="" id="">
+                    <option id="all" value="" selected>All</option>
+                    <option id="men" value="">Men</option>
+                    <option id="women" value="">Women</option>
+                    <option id="kids" value="">Kids</option>
+                </select>
+            </th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        <tbody id="tabledb">
+
+        </tbody>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "name": "Bhavin",
+      "num": "789",
+      "gender": "Men",
+      "id": 1
+    },
+    {
+      "name": "Mohini",
+      "num": "987",
+      "gender": "Women",
+      "id": 2
+    },
+    {
+      "name": "Mivaan",
+      "num": "456",
+      "gender": "Kids",
+      "id": 3
+    },
+    {
+      "name": "Keyaan",
+      "num": "123",
+      "gender": "Kids",
+      "id": 4
+    },
+    {
+      "name": "Gigi",
+      "num": "444",
+      "gender": "Women",
+      "id": 5
+    },
+    {
+      "name": "Akshay",
+      "num": "777",
+      "gender": "Men",
+      "id": 6
+    },
+    {
+      "name": "Karan",
+      "num": "656",
+      "gender": "Men",
+      "id": 7
+    },
+    {
+      "name": "Praviya",
+      "num": "123",
+      "gender": "Kids",
+      "id": 8
+    },
+    {
+      "name": "Jod",
+      "num": "101",
+      "gender": "Men",
+      "id": 9
+    }
+  ]
+}
