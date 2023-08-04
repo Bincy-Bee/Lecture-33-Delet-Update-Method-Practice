@@ -34,6 +34,18 @@
             padding: 5px 8px;
             border-radius: 5px;
         }
+        #btns button{
+            background-color: rgba(6, 103, 248, 0.308);
+            border: none;
+            padding: 5px 8px;
+            border-radius: 5px;
+        }
+        #print{
+            background-color: rgba(6, 248, 107, 0.308);
+            border: none;
+            padding: 5px 8px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -44,24 +56,18 @@
         <input type="submit" value="Submit" id="print">
     </form>
     <hr>
-    <div>
+    <div id="btns">
+        <button id="all">All</button>
         <button id="men">Men</button>
-        <button>Women</button>
-        <button>Kids</button>
+        <button id="women">Women</button>
+        <button id="kids">Kids</button>
     </div>
     <hr>
     <table>
          <tr>
             <th>Name</th>
             <th>Number</th>
-            <th>Gender
-                <select name="" id="">
-                    <option id="all" value="" selected>All</option>
-                    <option id="men" value="">Men</option>
-                    <option id="women" value="">Women</option>
-                    <option id="kids" value="">Kids</option>
-                </select>
-            </th>
+            <th>Gender</th>
             <th>Update</th>
             <th>Delete</th>
         </tr>

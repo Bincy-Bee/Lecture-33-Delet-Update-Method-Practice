@@ -4,6 +4,7 @@ let users = []; //take array for filter the data
 //Data Maped
 const table=(data)=>{
 
+    document.getElementById("tabledb").innerHTML="";
     data.map((item)=>{
 
         let tr = document.createElement("tr");
@@ -95,23 +96,27 @@ document.querySelector("form").addEventListener("submit",(e)=>{
         id = item.id;        
     }
 })
+
 // get data from surver whatever in database stored for Shown in UI and that data call with table data 
-fetch("http://localhost:8080/users")
+
+let get = async()=>{
+    fetch("http://localhost:8080/users")
 .then((xyz)=> xyz.json())
 .then( (dada)=> table(dada))
-
+}
+get();
 
 
 // filter for gender
 
 const handlegender=(gen)=>{
 
-    let sex = users.filter((item)=> item.gender == gen);
-    console.log(sex);
-    table(sex);
-
+    fetch(`http://localhost:8080/users?gender=${gen}`)
+    .then((xyz)=> xyz.json())
+    .then( (dada)=> table(dada))
 }
 
-
-
-document.getElementById("men").addEventListener("click", ()=> handlegender("Men"))
+document.getElementById("all").addEventListener("click", ()=> get());
+document.getElementById("men").addEventListener("click", ()=> handlegender("Men"));
+document.getElementById("women").addEventListener("click", ()=> handlegender("Women"));
+document.getElementById("kids").addEventListener("click", ()=> handlegender("Kids"));
